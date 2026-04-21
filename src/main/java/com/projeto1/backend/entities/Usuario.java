@@ -10,25 +10,25 @@ public class Usuario {
     
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private long id;
+    private Integer id;
     private String nome;
     private String email;
     private String senha;
      
     public Usuario(){}
 
-    public Usuario(long id, String nome, String email, String senha ){
+    public Usuario(Integer id, String nome, String email, String senha ){
         this.id = id;
         this.nome = nome;
         this.email = email;
         this.senha = senha;
     }
     
-    public Long getId(){
+    public Integer getId(){
         return id;
     }
 
-    public void setId(Long id){
+    public void setId(Integer id){
         this.id = id;
     }
     public String getNome() {
